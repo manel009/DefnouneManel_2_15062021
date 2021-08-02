@@ -18,38 +18,48 @@
 
     <!--Header-->
     <header class="header">
-        <img class="logo-reservia" src="images/logo/Reservia@3x.png" alt="Logo de Reservia" />
-        <ul class="menu-bar">
-            <li class="menu-item on-click-style"> <a href="#zoneResultatHerbergement"> Hébergement </a> </li>
-            <li class="menu-item"> <a href="#zone-activites"> Activités </a> </li>
-            <li class="menu-item"> <a href="inscription.html" class="bold"> S'inscire </a> </li>
-        </ul>
+		<span id="header-pc-tablet">
+			<img class="logo-reservia" src="images/logo/Reservia@3x.png" alt="Logo de Reservia" />
+			<nav class="menu-bar">
+				<li class="menu-item link-item on-click-style"> <a href="#zone-herbergement-et-les-plus-populaire"> Hébergement </a> </li>
+				<li class="menu-item link-item"> <a href="#zone-activites"> Activités </a> </li>
+				<li class="menu-item blue"> <a href="inscription.html" class="bold"> S'inscire </a> </li>
+			</nav>
+		</span>
+		<span id="header-mobile">
+			<img class="logo-reservia" src="images/logo/Reservia@3x.png" alt="Logo de Reservia" />
+			<a href="inscription.html" class="inscription-mobile bold blue"> S'inscire </a>
+			<nav class="menu-bar">
+				<li class="menu-item link-item on-click-style"> <a href="#zone-herbergement-et-les-plus-populaire"> Hébergement </a> </li>
+				<li class="menu-item link-item"> <a href="#zone-activites"> Activités </a> </li>
+			</nav>
+		</span>
     </header>
 
     <div class="container">
         <!--zone recherche -->
-        <div id="zone-recherche">
+        <section id="zone-recherche">
             <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature </p>
             <div class="input-container">
                 <span class="input-icon"> <i class=" fas fa-map-marker-alt"></i></span>
                 <input class="input-search" id="search-bar" type="search" placeholder="Marseille, France">
-                <button class="input-button" type="submit">Rechercher</button>
+                <button class="input-button" type="submit"> <span class="search-pc-tablet">Rechercher</span> <span class="search-mobile"> <i class="fas fa-search"></i> </span> </button>
             </div>
-        </div>
+        </section>
 
         <!--zone filtres -->
-        <div id="zone-filtres">
+        <section id="zone-filtres">
             <h2>Filtres</h2>
             <button id="filtre-economique" type="button" class="button-filter"> <i class="fas fa-money-bill-wave icone-filtre"></i> <b>Economique</b> </button>
             <button id="filtre-familial" type="button" class="button-filter"> <i class="fas fa-child icone-filtre"></i> <b> Familial</b> </button>
             <button id="filtre-romantique" type="button" class="button-filter"> <i class="fas fa-heart icone-filtre"></i> <b>Romantique</b></button>
             <button id="filtre-animaux-autorises" type="button" class="button-filter"> <i class="fa fa-dog icone-filtre"></i> <b>Animaux autorisés</b> </button>
-            <p> <i class="fa fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville </p>
-        </div>
+            <p> <i class="fa fa-info-circle blue"></i> Plus de 500 logements sont disponibles dans cette ville </p>
+        </section>
 
         <!--zone hébergements-->
-        <div id="zone-herbergement-et-les-plus-populaire">
+        <section id="zone-herbergement-et-les-plus-populaire">
             <div id="zone-hebergements" class="fond-gris-arrondis">
 
                 <h1>Hébergement à Marseille</h1>
@@ -169,10 +179,10 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
         <!--zone activités-->
-        <div id="zone-activites">
+        <section id="zone-activites">
             <h1>Activités à Marseille</h1>
 
             <div class="blocks-activite">
@@ -183,13 +193,13 @@
                 </div>
 
                 <div class="block-activite-2">
-                    <div class="coins-arrondis">
-                        <img class="img-activite-secondaire" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo de l'activité 2">
+                    <div class="coins-arrondis cellule-activite-espace-bottom">
+                        <img class="img-activite-secondaire-grande" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo de l'activité 2">
                         <h4>Fort de Poguème </h4>
                     </div>
 
                     <div class="coins-arrondis">
-                        <img class="img-activite-secondaire" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo de l'activité 3">
+                        <img class="img-activite-secondaire-petite" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo de l'activité 3">
                         <h4>Îles du Frioul</h4>
                     </div>
 
@@ -201,20 +211,20 @@
                 </div>
 
                 <div class="block-activite-4 ">
-                    <div class="coins-arrondis">
-                        <img class="img-activite-secondaire" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de l'activité 5" />
+                    <div class="coins-arrondis cellule-activite-espace-bottom">
+                        <img class="img-activite-secondaire-petite" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de l'activité 5" />
                         <h4>Notre-Dame-de-la-Garde</h4>
                     </div>
 
                     <div class="coins-arrondis">
-                        <img class="img-activite-secondaire" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo de l'activité 6" />
+                        <img class="img-activite-secondaire-grande" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo de l'activité 6" />
                         <h4>Parc Longchamp</h4>
                     </div>
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
     </div>
     <!--footer-->
